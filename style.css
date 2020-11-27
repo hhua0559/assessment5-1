@@ -1,0 +1,337 @@
+body {
+  font-family: 'Microsoft Yahei', '微软雅黑', Arial, 'Hiragino Sans GB', '宋体';
+  color: #555;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+ * header
+ */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #019875;
+  height: 4.2rem;
+}
+
+.container {
+  width: 60%;
+  margin-right: 10%;
+}
+
+
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.title {
+  width: 960px;
+  box-sizing: border-box;
+  display: table;
+  margin: 10px auto;
+  border-bottom: 1px dashed #019875;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #019875;
+  padding-left: 20px;
+  transition: 1s;
+}
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+.search {
+  line-height: 4.2rem;
+}
+
+.search-btn {
+  background-image: linear-gradient(to right, #ffa800, #1DC6DF);
+  border-radius: 0.25rem;
+  border: 1px solid #fff;
+}
+
+.contact-content {
+  width: 70%;
+  margin: 3.5rem auto;
+}
+
+.top-contact {
+  text-align: center;
+  margin-top: 2%;
+  background-color: #1DC6DF;
+  padding: 1rem;
+  color: #fff;
+  margin-bottom: .8rem;
+}
+
+.top-contact h2 {
+  color: #fff;
+}
+
+.contact {
+  display: flex;
+  padding: 0 5%;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.form_left {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form_right {
+  width: 60%;
+  padding: 1%;
+}
+
+.form_item {
+  border-bottom: 1px solid #1DC6DF;
+  margin-bottom: 2.2rem;
+  padding-bottom: 0.3rem;
+}
+
+.form_item span {
+  line-height: 1.8rem;
+  display: inline-block;
+}
+
+.form_item span:first-child {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form_field {
+  box-sizing: border-box;
+  margin-bottom: 0.8rem;
+}
+
+.form_field input,
+textarea {
+  width: 90%;
+  padding-left: 5%;
+  line-height: 1.7857em !important;
+  height: 3.6429em !important;
+  background: #f3f5f8;
+  padding: .7857em 1.4286em !important;
+  border: solid 2px #f3f5f8 !important;
+}
+
+.form_field textarea {
+  min-height: 8.6429em;
+}
+
+.button_color {
+  background-color: #1DC6DF;
+  border-color: #fff;
+  padding: 1.1rem 1.5rem;
+  transition: all .5s;
+}
+
+.button_color:hover {
+  background-color: #ffa800;
+  border-radius: .55rem;
+}
+
+.form_button {
+  margin-top: 1.8rem;
+}
+
+.detail-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.top-wrap{
+  padding: 5% 10%;
+  width: 80%;
+}
+
+.top-wrap table {
+  width: 100%;
+  border:1px solid #1DC6DF;
+}
+
+.top-wrap table thead th{
+   padding:1rem;
+}
+
+.top-wrap table tbody td{
+  padding:1rem;
+}
+table tbody tr{
+  border-bottom: 1px solid #1DC6DF;
+}
+.bottom-Wrap {
+  width: 90%;
+  padding: 5%;
+}
+.bottom-wrap ul li{
+  list-style-type: square;
+  color:#019875;
+  font-weight: 700;
+  padding: 0.8rem 0.5rem;
+}
+.bottom-wrap ul li p{
+  color:#999 !important;
+}
+
+.center{
+  text-align: center;
+}
+
+@media screen and (min-width:1200px) {
+
+  /* home page*/
+  .home-content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 2%;
+    flex-direction: row;
+  }
+
+  .search {
+    width: 25%;
+  }
+
+  .picture {
+    width: 45%;
+    margin: 5%;
+  }
+
+  .picture img {
+    width: 80%;
+    padding: 10%;
+  }
+
+  .home-text {
+    width: 40%;
+    padding: 12% 0 1% 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+  }
+
+  .home-text h2 {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width:1199px) {
+
+  /* home page*/
+  .home-content {
+    width: 85%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: row; */
+  }
+
+  .search {
+    width: 65%;
+  }
+
+  .picture {
+    width: 80%;
+    margin: 10%;
+  }
+
+  .picture img {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .home-text {
+    padding: 3%;
+    text-align: center;
+  }
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  padding: 10px 0;
+  color: #fff;
+  text-align: right;
+  background-color: #000;
+  border-top: 1px solid #e5e5e5;
+}
+
+footer p span:first-child {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  padding-right: 8px;
+}
